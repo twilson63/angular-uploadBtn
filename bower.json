@@ -1,0 +1,10 @@
+{
+  "name": "angular-uploadBtn",
+  "version": "0.0.1",
+  "main": "uploadBtn.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
