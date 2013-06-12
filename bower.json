@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "main": "uploadBtn.js",
   "dependencies": {
-    "angular": "~1.x",
+    "angular": "~1.x"
   },
   "ignore": [
     "**/.*",
