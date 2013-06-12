@@ -2,6 +2,9 @@
   "name": "angular-uploadBtn",
   "version": "0.0.1",
   "main": "uploadBtn.js",
+  "dependencies": {
+    "angular": "~1.x",
+  },
   "ignore": [
     "**/.*",
     "node_modules",

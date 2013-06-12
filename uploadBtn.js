@@ -1,4 +1,4 @@
-angular.module('angular-uploadBtn')
+angular.module('angular-uploadBtn', [])
   .directive('uploadButton', function($parse, $compile) {
     return {
       restrict: 'E',
