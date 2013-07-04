@@ -1,7 +1,7 @@
 {
-  "name": "angular-uploadBtn",
-  "version": "0.0.3",
-  "main": "uploadBtn.js",
+  "name": "angular-upload-button",
+  "version": "0.0.4",
+  "main": "upload-button.js",
   "dependencies": {
     "angular": "~1.x"
   },
