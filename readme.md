@@ -36,7 +36,7 @@ bower install angular-upload-button
 ```
 
 ``` html
-<script src="/bower_components/angular-upload-button/upload-button-btn.js"></script>
+<script src="/bower_components/angular-uploadBtn/upload-button-btn.js"></script>
 ```
 
 ``` js
