@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Angular-uploadbtn by twilson63</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Angular-uploadbtn</h1>
+          <h2>SingleClick Upload Button for AngularJS</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/twilson63/angular-uploadBtn/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/twilson63/angular-uploadBtn/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/twilson63/angular-uploadBtn" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="angular-uploadbtn" class="anchor" href="#angular-uploadbtn"><span class="octicon octicon-link"></span></a>angular-uploadBtn</h1>
+
+<p>A custom directive that gives you a button 
+when clicked prompt for the file and uses
+XHR2 to post the file to the server using
+the action attribute as the endpoint.  </p>
+
+<p>When complete, the directive fires the function
+set to the complete attribute.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>&lt;upload-button
+  action="api/file"
+  complete="uploaded($data, $status)"&gt;
+  Upload File
+&lt;/upload-button&gt;
+</code></pre>
+
+<p>The server posts the file under the field uploadFile.</p>
+
+<h2>
+<a name="server-example" class="anchor" href="#server-example"><span class="octicon octicon-link"></span></a>Server Example</h2>
+
+<div class="highlight"><pre><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">'/api/file'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">files</span><span class="p">.</span><span class="nx">uploadFile</span><span class="p">);</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<div class="highlight"><pre>bower install angular-upload-button
+</pre></div>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/bower_components/angular-uploadBtn/upload-button-btn.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<div class="highlight"><pre><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'App'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'upload.button'</span><span class="p">]);</span>
+</pre></div>
+
+<h2>
+<a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h2>
+
+<p>File issues on github</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+
+<h2>
+<a name="roadmap" class="anchor" href="#roadmap"><span class="octicon octicon-link"></span></a>Roadmap</h2>
+
+<p>Still lots to do here, we can add progress tracking and 
+other attributes to make the button control extremely
+robust.  Suggestion and Pull Requests are welcome</p>
+
+<h2>
+<a name="alternatives" class="anchor" href="#alternatives"><span class="octicon octicon-link"></span></a>Alternatives</h2>
+
+<p>If you need compatibility for IE 8 and below, you may want
+to checkout <code>ng-upload</code>.</p>
+
+<p><a href="http://twilson63.github.io/ngUpload/">http://twilson63.github.io/ngUpload/</a></p>
+
+<h2>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<ul>
+<li>Tom Wilson <a href="http://githu.com/twilson63">twilson63</a>
+</li>
+</ul>
+        </section>
+
+        <footer>
+          Angular-uploadbtn is maintained by <a href="https://github.com/twilson63">twilson63</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
