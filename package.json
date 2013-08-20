@@ -1,0 +1,22 @@
+{
+  "name": "angular-uploadBtn",
+  "version": "0.0.6",
+  "description": "An angular js directive for uploading files",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twilson63/angular-uploadBtn.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/twilson63/angular-uploadBtn/issues"
+  },
+  "dependencies": {
+    "grunt-bump": "0.0.11",
+    "grunt": "~0.4.1"
+  }
+}
