@@ -1,3 +1,17 @@
+// # Upload Button
+//
+// A custom directive to add single click upload
+// 
+// example
+//
+// <upload-button
+//    action="/api/files"
+//    complete="uploaded($data, $status)">
+//   Upload File
+// </upload-button>
+//
+// for more details see readme.md
+//
 angular.module('upload.button', [])
   .directive('uploadButton', function($parse, $compile) {
     return {
@@ -8,7 +22,9 @@ angular.module('upload.button', [])
       link: function(scope, element, attrs) {
         element.find('input').bind('change', function() {
           var fd = new FormData();
+          // send to server as uploadFile field
           fd.append('uploadFile', this.files[0]);
+          // create xhr
           var xhr = new XMLHttpRequest();
           xhr.addEventListener("load", function(e) {
             var fn = $parse(attrs.complete);
@@ -23,6 +39,7 @@ angular.module('upload.button', [])
     };
 });
 
+// directive template
 function btnTemplate() {
   return '<span class="{{class}}" style="position: relative;overflow: hidden;margin-right: 4px;"' +'>' +
            '<span ng-transclude></span>' +
