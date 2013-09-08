@@ -13,7 +13,7 @@
 // for more details see readme.md
 //
 angular.module('upload.button', [])
-  .directive('uploadButton', function($parse, $compile) {
+  .directive('uploadButton', ['$parse', '$compile', function($parse, $compile) {
     return {
       restrict: 'E',
       replace: true,
@@ -37,7 +37,7 @@ angular.module('upload.button', [])
         });
       }
     };
-});
+}]);
 
 // directive template
 function btnTemplate() {
