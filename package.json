@@ -1,6 +1,6 @@
 {
   "name": "angular-uploadBtn",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "An angular js directive for uploading files",
   "main": "Gruntfile.js",
   "scripts": {
