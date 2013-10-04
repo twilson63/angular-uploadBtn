@@ -32,7 +32,7 @@ app.post('/api/file', function(req,res) {
 ## Install
 
 ``` sh
-bower install angular-upload-button
+bower install angular-uploadBtn
 ```
 
 ``` html
